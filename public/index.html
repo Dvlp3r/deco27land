@@ -93,8 +93,41 @@
             </div>
             <div class="modal-body">
 
+<form class="form-horizontal" name="commentform" method="post" action="/send">
+    <div class="form-group">
+        <label class="control-label col-md-4" for="first_name">First Name</label>
+        <div class="col-md-6">
+            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-4" for="last_name">Last Name</label>
+        <div class="col-md-6">
+            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-4" for="email">Email Address</label>
+        <div class="col-md-6 input-group">
+        <span class="input-group-addon">@</span>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-4" for="comment">Question or Comments</label>
+        <div class="col-md-6">
+            <textarea rows="6" class="form-control" id="comments" name="message" placeholder="Your message here"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-6">
+            <button type="submit" value="Send" class="btn btn-custom pull-right">Sumbit</button>
+        </div>
+    </div>
+</form>
 
-                <div id='contact-box' class="group">
+
+               <!--  <div id='contact-box' class="group">
                   <div class="span6 clear">
                     <form action="/send" method="post" class="well">
                       <label for="name">Your Name:</label>
@@ -106,7 +139,7 @@
                       <button type="submit" class="btn" value="Send">Submit</button>
                     </form>
                   </div>
-                </div>
+                </div> -->
 
             </div><!-- End of Modal body -->
         </div><!-- End of Modal content -->
