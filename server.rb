@@ -28,7 +28,7 @@ post '/send' do
       :subject =>"#{name} is Requesting a Consultation",
       :body => "#{name}, #{sender_email}, #{sender_number}, #{message}",
     )
-    redirect 'success.html'
+    redirect '/success.html'
   rescue
     @exception = $!
     erb :boom
