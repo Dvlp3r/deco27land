@@ -23,10 +23,10 @@ post '/send' do
   logger.error params.inspect
   begin
     Pony.mail(
-      :from => "#{first_name} #{last_name}<#{sender_email}>",
+      :from => "#{first_name}<#{sender_email}>",
       :to => 'luis@dvlper.com',
-      :subject =>"#{first_name} #{last_name} is Requesting a Consultation",
-      :body => "#{first_name} #{last_name}, #{sender_email}, #{message}",
+      :subject =>"#{first_name} is Requesting a Consultation",
+      :body => "#{first_name}, #{sender_email}, #{message}",
     )
     redirect 'http://www.deco27.net/'
   rescue
