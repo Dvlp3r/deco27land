@@ -27,7 +27,7 @@ post '/send' do
       :subject =>"#{name} is Requesting a Consultation",
       :body => "#{name}, #{sender_email}, #{message}",
     )
-    redirect '/'
+    redirect 'http://www.deco27.net/'
   rescue
     @exception = $!
     erb :boom
