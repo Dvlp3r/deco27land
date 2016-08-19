@@ -14,22 +14,6 @@ get '/' do
 end
 
 
-def configure_pony
-  Pony.options = {
-    :via => :smtp,
-    :via_options => { 
-      :address              => 'smtp.sendgrid.net', 
-      :port                 => '587',  
-      :user_name            => ENV['SENDGRID_USERNAME'], 
-      :password             => ENV['SENDGRID_PASSWORD'], 
-      :authentication       => :plain, 
-      :enable_starttls_auto => true,
-      :domain               => 'heroku.com'
-    }    
-  }
-end
-
-
 post '/send' do 
   configure_pony
   name = params[:name]
@@ -51,3 +35,17 @@ post '/send' do
 end
 
 
+def configure_pony
+  Pony.options = {
+    :via => :smtp,
+    :via_options => { 
+      :address              => 'smtp.sendgrid.net', 
+      :port                 => '587',  
+      :user_name            => ENV['SENDGRID_USERNAME'], 
+      :password             => ENV['SENDGRID_PASSWORD'], 
+      :authentication       => :plain, 
+      :enable_starttls_auto => true,
+      :domain               => 'heroku.com'
+    }    
+  }
+end
