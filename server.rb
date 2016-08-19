@@ -39,11 +39,11 @@ post '/send' do
   begin
     Pony.mail(
       :from => "#{name}<#{sender_email}>",
-      :to => 'luis@dvlper.com',
+      :to => 'luislam96@gmail.com',
       :subject =>"#{name} has contacted you",
       :body => "#{message}",
     )
-    redirect '/success'
+    redirect '/'
   rescue
     @exception = $!
     erb :boom
