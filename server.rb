@@ -18,6 +18,7 @@ post '/send' do
   configure_pony
   name = params[:name]
   sender_email = params[:email]
+  sender_number = params[:telephone]
   message = params[:message]
   logger.error params.inspect
   begin
@@ -25,7 +26,7 @@ post '/send' do
       :from => "#{name}<#{sender_email}>",
       :to => 'luis@dvlper.com',
       :subject =>"#{name} is Requesting a Consultation",
-      :body => "#{name}, #{sender_email}, #{message}",
+      :body => "#{name}, #{sender_email}, #{sender_number}, #{message}",
     )
     redirect 'http://www.deco27.net/'
   rescue
