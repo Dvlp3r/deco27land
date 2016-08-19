@@ -298,6 +298,11 @@ img {
 	max-width: 100%;
 	float: left;
 }
+.btn-custom {
+	margin: 0px -200px;
+	padding: 10px 105px;
+	border-radius: 0px;
+}
 .row-vr {
 	position: relative;
 }
@@ -626,3 +631,16 @@ img {
     padding-right: 15px;
     padding-left: 15px;
     }
+
+    ::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;  
+}
+::-moz-placeholder {
+   font-style: italic;  
+}
+:-ms-input-placeholder {  
+   font-style: italic; 
+}
