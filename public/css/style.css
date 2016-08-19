@@ -300,8 +300,13 @@ img {
 }
 .btn-custom {
 	margin: 0px -200px;
-	padding: 10px 105px;
+	padding: 10px;
+	width: 100%;
+	border: none;
 	border-radius: 0px;
+	background: #c0242b;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
 }
 .row-vr {
 	position: relative;
@@ -568,6 +573,17 @@ img {
 		margin-left: 0;
 	}
 }
+@media (max-width: 991px) {
+	.btn-custom {
+		margin: 0px 0px;
+		padding: 15px;
+	}
+}
+@media (max-width: 767px) {
+	.modal-content {
+		margin-top: 0px;
+	}
+}
 @media (min-width: 992px) {
 	.header-nav {
 		margin: 0;
@@ -622,6 +638,7 @@ img {
 
 .modal-body .form-horizontal .control-label {
     text-align: left;
+    font-family: 'Lato', sans-serif;
 }
 .modal-body .form-horizontal .col-sm-offset-2 {
     margin-left: 15px;
