@@ -16,8 +16,8 @@ end
 
 post '/send' do 
   configure_pony
-  first_name = params[:first_name]
-  last_name = params [:last_name]
+  first_name = params[:firstname]
+  last_name = params [:lastname]
   sender_email = params[:email]
   message = params[:message]
   logger.error params.inspect
