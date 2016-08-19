@@ -30,7 +30,7 @@ def configure_pony
 end
 
 
-post '/' do 
+post '/send' do 
   configure_pony
   name = params[:name]
   sender_email = params[:email]
