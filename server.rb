@@ -25,7 +25,7 @@ post '/send' do
       :from => "#{name}<#{sender_email}>",
       :to => 'luis@dvlper.com',
       :subject =>"#{name} is Requesting a Consultation",
-      :body => "#{message}",
+      :body => "#{name}, #{sender_email}, #{message}",
     )
     redirect '/'
   rescue
