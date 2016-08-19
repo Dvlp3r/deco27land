@@ -16,17 +16,16 @@ end
 
 post '/send' do 
   configure_pony
-  first_name = params[:first_name]
-  last_name = params [:last_name]
+  name = params[:name]
   sender_email = params[:email]
   message = params[:message]
   logger.error params.inspect
   begin
     Pony.mail(
-      :from => "#{first_name} #{last_name}<#{sender_email}>",
+      :from => "#{name}<#{sender_email}>",
       :to => 'luis@dvlper.com',
-      :subject =>"#{first_name} #{last_name} is Requesting a Consultation",
-      :body => "#{first_name} #{last_name}, #{sender_email}, #{message}",
+      :subject =>"#{name} is Requesting a Consultation",
+      :body => "#{name}, #{sender_email}, #{message}",
     )
     redirect 'http://www.deco27.net/'
   rescue
