@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic|Bitter:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/html5shiv.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="js/functions.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+
+<header id="header" class="header wrapper-center-block" data-lead-id="header">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-xs-12 col-md-3 center-block center-block-inline vcenter text-xs-center text-sm-center text-left">
+                <a data-lead-id="logo"><img class="logo" src="img/logo.png" alt=""></a>
+            </div>
+            <div class="col-xs-12 col-md-9 center-block center-block-inline vcenter text-xs-center text-sm-center text-right" data-lead-id="nav">
+                <ul class="header-nav">
+                    <li><a href="http://www.deco27.net/" data-lead-id="nav-link-1">HOME</a></li>
+                    <li><a href="http://www.deco27.net/inspiration/" data-lead-id="nav-link-2">INSPIRATION</a></li>
+                    <li><a href="http://www.deco27.net/categories" data-lead-id="nav-link-3">CATEGORIES</a></li>
+                    <li><a href="http://www.blog.deco27.net/" data-lead-id="nav-link-4">BLOG</a></li>
+                    <li><a href="http://www.deco27.net/contact" data-lead-id="nav-link-5">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="contact-bar" data-lead-id="contact-bar">
+    <div class="container">
+        <div class="col-xs-12 col-md-7 vcenter text-xs-center text-sm-center">
+            <p class="tagline" data-lead-id="contact-tagline">South Florida's Premier Luxury Interior Decorator</p>
+        </div>
+        <div class="col-xs-12 col-md-5 vcenter text-xs-center text-sm-center text-right">
+            <div class="contact-line phone vcenter" data-lead-id="contact-phone-wrapper">
+                <i class="fa fa-phone" data-lead-id="contact-phone-icon"></i>
+                <p data-lead-id="contact-phone">305.859.4848</p>
+            </div>
+            <div class="contact-line email vcenter" data-lead-id="contact-email-wrapper">
+                <i class="fa fa-envelope" data-lead-id="contact-email-icon"></i>
+                <p data-lead-id="contact-email">info@deco27.net</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper wrapper-bg-banner banner" data-lead-id="banner">
+	<div class="bg-wrapper">
+        <img src="img/banner.jpg" alt="" data-lead-id="banner-bg">
+    </div>
+	<div class="bg-text middle">
+        <div class="fill">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h1 data-lead-id="banner-title">Quality Interior Elements</h1>
+                        <p class="lg" data-lead-id="banner-text"> Whether you already have a clear vision or are still searching for inspiration, your passion project deserves quality interior elements. With this in mind, we offer a wide array of natural elements, both domestic and imported from the world's most prestigious manufacturers, as well as our private collections customized to your request.</p>
+                        <!-- <div class="btn-inline-wrap text-center">
+                            <a class="btn btn-inline" data-lead-id="banner-btn">REQUEST A CONSULTATION</a>
+                        </div> -->
+
+
+                        <div class="btn-inline-wrap text-center">
+                            <a href="#myModal" role="button" class="btn btn-inline" data-lead-id="banner-btn" data-toggle="modal">REQUEST A CONSULTATION</a>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Contact Form</h4>
+            </div>
+            <div class="modal-body">
+
+
+                <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
+                    <div class="form-group">
+                        <label class="control-label col-md-4" for="first_name">First Name</label>
+                        <div class="col-md-6">
+                        <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4" for="last_name">Last Name</label>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4" for="email">Email Address</label>
+                        <div class="col-md-6 input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4" for="comment">Question or Comment</label>
+                        <div class="col-md-6">
+                            <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <button type="submit" value="Submit" class="btn btn-custom pull-right">Send</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div><!-- End of Modal body -->
+        </div><!-- End of Modal content -->
+    </div><!-- End of Modal dialog -->
+</div><!-- End of Modal -->
+
+
+
+
+
+
+<div id="section1" class="wrapper wrapper-center-block about" data-lead-id="about">
+    <div class="container">
+        <div class="row text-center row-vr">
+            <div class="col-xs-12 col-md-7 vcenter text-left" data-lead-id="about-left">
+                <div class="fill">
+                    <h3 data-lead-id="about-lead">Deco27 Quality Promise</h3>
+                    <h2 data-lead-id="about-title">The Highest Standards of Quality.</h2>
+                    <p data-lead-id="about-text-1">Quality has always been the most important part of our philosophy, and we take it very seriously. With a regularly trained staff, we ensure we are always up to date on the newest technology, materials, and installation processes.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-5 vcenter text-left" data-lead-id="about-right">
+                <p class="about-content" data-lead-id="about-text-2">Deco27 prides itself in offering unparalleled customer satisfaction by delivering solutions to the most creative interior designs and challenging installation alternatives. We are conveniently located in the heart of Miami, rendering our business an ideal destination for designers, architects and clients alike with high quality personalized attention to detail that have made us the leader in our field for more than 30 yrs.<br />
+                <br />
+                We offer the most elegant and luxurious quality elements, like hand crafted hardwood floors and walls, recycled leather floors, porcelains, classic and extravagant doors, and even art. Our product line is characterized by their striking colors, diversity of rich styles, and unsurpassed durability.</p>
+            </div>
+            <div class="vr" data-lead-id="about-vr"></div>
+        </div>
+    </div>
+</div>
+
+<div id="section2" class="wrapper wrapper-center-block details" data-lead-id="details">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-xs-12">
+                <h4 class="lined" data-lead-id="details-title">Our Specialties</h4>
+                <div class="title-line" data-lead-id="details-title-line"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-4 vcenter" data-lead-id="detail-1">
+                <div class="fill">
+                    <img class="img-responsive img-inline" src="img/detail-1.png" alt="" data-lead-id="detail-1-img">
+                    <h5 data-lead-id="detail-1-title">Desginer and Architect Redbox</h5>
+                    <p data-lead-id="detail-1-text">If you are an interior designer or architect, ask us for a free sample box full of our favorite woods, recycled leathers, and porcelains.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 vcenter" data-lead-id="detail-2">
+                <div class="fill">
+                    <img class="img-responsive img-inline" src="img/detail-2.png" alt="" data-lead-id="detail-2-img">
+                    <h5 data-lead-id="detail-2-title">New Bathroom Collection</h5>
+                    <p data-lead-id="detail-2-text">We are proud to add bathroom elements and accessories to our vast collection. Come see our luxurious collection in our new showroom.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 vcenter" data-lead-id="detail-3">
+                <div class="fill">
+                    <img class="img-responsive img-inline" src="img/detail-3.png" alt="" data-lead-id="detail-3-img">
+                    <h5 data-lead-id="detail-3-title">Custom Elements</h5>
+                    <p data-lead-id="detail-3-text">For our clients who know what they want, we offer our private collection, custom made to your specifications and hand engineered here at Deco27.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="section3" class="wrapper wrapper-center-block profiles" data-lead-id="profiles">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-xs-12">
+                <h4 class="lined" data-lead-id="profiles-title">Meet the Team</h4>
+                <div class="title-line" data-lead-id="profiles-title-line"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-4 vcenter" data-lead-id="profile-1">
+                <div class="fill">
+                    <img class="img-responsive img-inline" src="img/profile-1.jpg" alt="" data-lead-id="profile-1-img">
+                    <h5 data-lead-id="profile-1-title">Fabian Llobell</h5>
+                    <p data-lead-id="profile-1-text">Sometimes Fabian likes to smoke a big cigar while he runs Deco27.</p>
+                    <ul class="icon-list" data-lead-id="profile-1-contact">
+                        <li data-lead-id="profile-1-facebook"><i class="fa fa-facebook"></i><a href="#" data-lead-id="profile-1-facebook-link"></a></li>
+                        <li data-lead-id="profile-1-twitter"><i class="fa fa-twitter"></i><a href="#" data-lead-id="profile-1-twitter-link"></a></li>
+                        <li data-lead-id="profile-1-linkedin"><i class="fa fa-linkedin"></i><a href="#" data-lead-id="profile-1-linkedin-link"></a></li>
+                        <li data-lead-id="profile-1-email"><i class="fa fa-envelope"></i><a href="#" data-lead-id="profile-1-email-link"></a></li>
+                        <li data-lead-id="profile-1-phone"><i class="fa fa-phone"></i><a href="#" data-lead-id="profile-1-phone-link"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 vcenter" data-lead-id="profile-2">
+                <div class="fill">
+                    <img class="img-responsive img-inline" src="img/profile-2.jpg" alt="" data-lead-id="profile-2-img">
+                    <h5 data-lead-id="profile-2-title">Fabian Llobell</h5>
+                    <p data-lead-id="profile-2-text">Other times Fabian drives his cadillac instead while he smokes his cigar.</p>
+                    <ul class="icon-list" data-lead-id="profile-2-contact">
+                        <li data-lead-id="profile-2-facebook"><i class="fa fa-facebook"></i><a href="#" data-lead-id="profile-2-facebook-link"></a></li>
+                        <li data-lead-id="profile-2-twitter"><i class="fa fa-twitter"></i><a href="#" data-lead-id="profile-2-twitter-link"></a></li>
+                        <li data-lead-id="profile-2-linkedin"><i class="fa fa-linkedin"></i><a href="#" data-lead-id="profile-2-linkedin-link"></a></li>
+                        <li data-lead-id="profile-2-email"><i class="fa fa-envelope"></i><a href="#" data-lead-id="profile-2-email-link"></a></li>
+                        <li data-lead-id="profile-2-phone"><i class="fa fa-phone"></i><a href="#" data-lead-id="profile-2-phone-link"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 vcenter" data-lead-id="profile-3">
+                <div class="fill">
+                    <img class="img-responsive img-inline" src="img/profile-3.jpg" alt="" data-lead-id="profile-3-img">
+                    <h5 data-lead-id="profile-3-title">Fabian Llobell</h5>
+                    <p data-lead-id="profile-3-text">And on some occasions, Fabian likes to be outdoors, alone with nature.</p>
+                    <ul class="icon-list" data-lead-id="profile-3-contact">
+                        <li data-lead-id="profile-3-facebook"><i class="fa fa-facebook"></i><a href="#" data-lead-id="profile-3-facebook-link"></a></li>
+                        <li data-lead-id="profile-3-twitter"><i class="fa fa-twitter"></i><a href="#" data-lead-id="profile-3-twitter-link"></a></li>
+                        <li data-lead-id="profile-3-linkedin"><i class="fa fa-linkedin"></i><a href="#" data-lead-id="profile-3-linkedin-link"></a></li>
+                        <li data-lead-id="profile-3-email"><i class="fa fa-envelope"></i><a href="#" data-lead-id="profile-3-email-link"></a></li>
+                        <li data-lead-id="profile-3-phone"><i class="fa fa-phone"></i><a href="#" data-lead-id="profile-3-phone-link"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Our Clients -->
+
+<div class="wrapper wrapper-center-block clients" data-lead-id="testimonials">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-xs-12">
+                <h4 class="lined" data-lead-id="profiles-title">Some of Our Clients</h4>
+                <div class="title-line" data-lead-id="profiles-title-line"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row row-custom-padding">
+                <div class="column col-md-12">
+                    <div class="animate-box animated fadeInDown linear go" data-animate="1"></div>
+                    <div class="client client-grid">
+
+                        <div class="row text-center">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="client-item">
+                                    <img alt="AmericanAirlinesArena" src="img/logo/AAA.png">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="client-item">
+                                    <img alt="Fountainbleau" src="img/logo/Fountainbleau.png">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="client-item">
+                                    <img alt="VictoriasSecret" src="img/logo/Victorias-Secret.png">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="client-item">
+                                    <img alt="MiamiInternationalAirport" src="img/logo/MIA.png">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row text-center">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="client-item">
+                                    <img alt="WarnerBrosStudios" src="img/logo/Warner-Bros-Studios.png">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="client-item">
+                                    <img alt="DadelandMall" src="img/logo/Dadeland-Mall.png">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="client-item">
+                                    <img alt="AventuraMall" src="img/logo/Aventura-Mall.png">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="client-item">
+                                    <img alt="UniversalStudios" src="img/logo/Universal-Studios.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Our Clients -->
+
+<div id="section4" class="wrapper wrapper-center-block cta" data-lead-id="cta">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-xs-12 col-md-10 col-lg-8 center-block">
+                <h4 class="lined" data-lead-id="cta-title">Ready to Talk to Us?</h4>
+                <div class="title-line" data-lead-id="cta-title-line"></div>
+                <p class="lg" data-lead-id="cta-text">We're looking forward to meet with you to discuss the options available for your project. To enhance your experience with us, we have created a state of the art showroom where you can see today’s most luxurious options in interior elements, as well as have a professional staff member with an eye for detail help you make the selection that best emphasizes your design needs. Please click the button below to schedule your consultation.</p>
+                <div class="btn-inline-wrap text-center">
+                    <a class="btn btn-inline" data-lead-id="cta-btn">REQUEST A CONSULTATION</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map maps" data-lead-id="map" onclick="document.getElementById('iframe').style.pointerEvents= 'auto'">
+	<div id="map_canvas iframe" data-lead-id="map-canvas">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8228.138492141545!2d-80.2400607927527!3d25.739588629458947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b7b42264816f%3A0xfde7c16eb1b72544!2sDeco27!5e0!3m2!1sen!2sus!4v1471578210893" width="100%" height="340" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<footer class="footer" data-lead-id="footer">
+    <div class="wrapper wrapper-center-block footer-contact" data-lead-id="footer-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-7">
+                    <div class="row text-center">
+                        <div class="col-xs-12 col-sm-6 center-block center-block-inline text-xs-center text-left" data-lead-id="footer-col-1">
+                            <div class="fill">
+                                <a data-lead-id="footer-logo"><img class="footer-logo" src="img/logo-2.png" alt=""></a>
+                                <p class="footer-logo-text" data-lead-id="footer-logo-text">High Quality Interior Elements.<br>Industry leader for more than 30 years.</p>
+                                <h5 data-lead-id="footer-contact-title">CONTACT</h5>
+                                <div class="footer-icon-wrapper" data-lead-id="footer-phone-wrapper">
+                                    <i class="fa fa-phone" data-lead-id="footer-phone-icon"></i>
+                                    <p data-lead-id="footer-phone">305.859.4848</p>
+                                </div><br />
+                                <div class="footer-icon-wrapper" data-lead-id="footer-email-wrapper">
+                                    <i class="fa fa-envelope" data-lead-id="footer-email-icon"></i>
+                                    <p data-lead-id="footer-email">info@deco27.net</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 center-block center-block-inline text-center" data-lead-id="footer-col-2">
+                            <div class="fill">
+                                <h5 data-lead-id="footer-location-title">LOCATION</h5>
+                                <div class="footer-icon-wrapper footer-location-wrapper" data-lead-id="footer-location-wrapper">
+                                    <i class="fa fa-map-marker" data-lead-id="footer-location-icon"></i>
+                                    <p data-lead-id="footer-location">Deco27<br />
+                                    (US-1 and SW 27th Ave)<br />
+                                    2646 SW 28 Lane<br />
+                                    Miami, FL 33133</p>
+                                </div><br />
+                                <h5 data-lead-id="footer-hours-title">HOURS</h5>
+                                <div class="footer-icon-wrapper" data-lead-id="footer-hours-wrapper">
+                                    <i class="fa fa-clock-o" data-lead-id="footer-hours-icon"></i>
+                                    <p data-lead-id="footer-hours">Monday - Friday: 9am - 6pm<br />
+                                    Saturday: 10am - 4pm<br />
+                                    Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-5 center-block center-block-inline" data-lead-id="footer-col-3">
+                    <h5 class="text-xs-center" data-lead-id="footer-mission-title">OUR STORY</h5>
+                    <p data-lead-id="footer-mission-text">Deco27 is one of Florida’s largest and most recognized company specialized in hardwood flooring, doors, porcelains, walls, and bathrooms. Our goal is to provide the finest quality products at competitive market prices, while maintaining the highest standards in service. We pride ourself in offering unparalleled customer satisfaction by delivering solutions for the most creative interior designs and challenging installation alternatives.<br />
+                    <br />
+                    We offer an innovative product line for discerning buyers so we can provide more choices of fine and luxurious alternatives with striking colors, a diversity of rich styles, and unsurpassed durability.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-legal" data-lead-id="footer-legal">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 vcenter text-xs-center">
+                    <ul class="footer-list" data-lead-id="footer-social">
+                        <li data-lead-id="social-facebook">
+                            <span><i class="fa fa-facebook"></i></span>
+                            <a href="https://www.facebook.com/pages/Deco27/207832979554728?fref=ts" data-lead-id="social-facebook-link"></a>
+                        </li>
+                        <li data-lead-id="social-instagram">
+                            <span><i class="fa fa-instagram"></i></span>
+                            <a href="https://www.instagram.com/deco27miami/" data-lead-id="social-instagram-link"></a>
+                        </li>
+                        <li data-lead-id="social-pinterest">
+                            <span><i class="fa fa-pinterest"></i></span>
+                            <a href="https://www.pinterest.com/deco27miami/" data-lead-id="social-pinterest-link"></a>
+                        </li>
+                        <li data-lead-id="social-email">
+                            <span><i class="fa fa-envelope"></i></span>
+                            <a href="mailto:info@deco27.net" data-lead-id="social-email-link"></a>
+                        </li>
+                        <li data-lead-id="social-phone">
+                            <span><i class="fa fa-phone"></i></span>
+                            <a href="tel:3058594848" data-lead-id="social-phone-link"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 vcenter text-xs-center text-right">
+                    <p class="copyright" data-lead-id="copyright">Copyright &copy; 2016&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Legal Information</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript">    
+$('.maps').click(function () {
+    $('.maps iframe').css("pointer-events", "auto");
+});
+</script>
+
+</body>
+</html>
