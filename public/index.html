@@ -96,17 +96,42 @@
 
                 <div id='contact-box' class="group">
                   <div class="span6 clear">
+<form class="form-horizontal" name="commentform" method="post" action="/send">
+    <div class="form-group">
+        <label class="control-label col-md-4" for="name">Your Name</label>
+        <div class="col-md-6">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-4" for="email">Email Address</label>
+        <div class="col-md-6 input-group">
+        <span class="input-group-addon">@</span>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-4" for="to">Question or Comments</label>
+        <div class="col-md-6">
+            <textarea rows="6" class="form-control" id="message" name="message" placeholder="Your question or comment here"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-6">
+            <button type="submit" value="Send" class="btn btn-custom pull-right">Submit</button>
+        </div>
+    </div>
+</form>
+<!-- 
                     <form action="/send" method="post" class="well">
-                      <label for="firstname">First Name:</label>
-                      <input type="text" name="firstname" class="span4" placeholder="John">
-                      <label for="lastname">Last Name:</label>
-                      <input type="text" name="lastname" class="span4" placeholder="Smith">
+                      <label for="name">Your Name:</label>
+                      <input type="text" name="name" class="span4" placeholder="John Smith...">
                       <label for="email">Your email address:</label>
                       <input type="text" name="email" class="span4" placeholder="email@example.com">
                       <label for="to">Your message:</label>
                       <textarea name="message" cols='30' rows="10"></textarea><br>
                       <button type="submit" class="btn" value="Send">Submit</button>
-                    </form>
+                    </form> -->
                   </div>
                 </div>
 
