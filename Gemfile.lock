@@ -1,6 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    mail (2.6.4)
+      mime-types (>= 1.16, < 4)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
+    pony (1.11)
+      mail (>= 2.0)
     rack (1.6.0)
     rack-protection (1.5.3)
       rack
@@ -14,4 +21,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  pony
   sinatra
+
+RUBY VERSION
+   ruby 2.3.1p112
+
+BUNDLED WITH
+   1.12.5
