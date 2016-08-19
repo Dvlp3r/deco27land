@@ -23,8 +23,8 @@ post '/send' do
   begin
     Pony.mail(
       :from => "#{name}<#{sender_email}>",
-      :to => 'luislam96@gmail.com',
-      :subject =>"#{name} has contacted you",
+      :to => 'luis@dvlper.com',
+      :subject =>"#{name} is Requesting a Consultation",
       :body => "#{message}",
     )
     redirect '/'
