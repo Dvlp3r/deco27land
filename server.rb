@@ -24,7 +24,7 @@ post '/send' do
   begin
     Pony.mail(
       :from => "#{name}<#{sender_email}>",
-      :to => 'luis@dvlper.com',
+      :to => 'fabian@deco27.net',
       :subject =>"#{name} is Requesting a Consultation",
       :body => "#{name}, #{sender_email}, #{sender_number}, #{message}",
     )
